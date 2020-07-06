@@ -1,21 +1,31 @@
 import React, { Component } from 'react';
 import './App.css';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import PlayerVsComputer from './components/PlayerVsComputer';
+import ComputerVsComputer from './components/ComputerVsComputer';
+import Navbar from './components/Navbar';
+
 
 class App extends Component {
 
   render() {
     return (
-      <div>
-        <header className="App-header">
-          Rock Paper Scissors
-        </header>
-
-        <div className="choices">
-          <img src="/rock.png" alt="rock" className="choice"/>
-          <img src="/paper.png" alt="paper" className="choice"/>
-          <img src="/scissors.png" alt="scissors" className="choice"/>
+      <Router>
+        <Navbar />
+        <div>
+          <header>
+            Rock Paper Scissors
+          </header>
+            <Switch>
+              <Route path="/computer">
+                <ComputerVsComputer />
+              </Route>
+              <Route path="/">
+                <PlayerVsComputer />
+              </Route>
+            </Switch>
         </div>
-      </div>
+      </Router>
     );
   }
 }

@@ -7,14 +7,50 @@ header {
   font-size: 3rem;
   font-weight: bold;
   color: #3E3E3E;
+  margin-top: 1rem;
 }
 
 .choices {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .choice {
   display: inline-block;
   width: 10rem;
+  margin-left: 3rem;
+}
+
+.nav-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nav-bar li{
+  padding: 0 1rem;
+  float: right;
+  list-style: none;
+}
+
+.nav-bar ul a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #3E3E3E;
+}
+
+.score {
+  border: 1px solid #3E3E3E;
+  border-radius: 2px;
+  margin: 4rem auto;
+  width: 7rem;
+  padding: 4rem;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #3E3E3E;
+}
+
+.match-message {
+  text-align: center;
+  font-size: 2rem;
 }
