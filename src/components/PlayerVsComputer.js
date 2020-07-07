@@ -53,19 +53,30 @@ class PlayerVsComputer extends Component {
     }
   }
 
+  newGame = () => {
+    this.setState({
+      playerScore: 0,
+      computerScore: 0,
+      message: ""
+    })
+  }
+
   render() {
     return (
       <div>
-        <div className="match-container">
+        <div className="container">
           <div className="label">Player</div>
           <div className="score"> {this.state.playerScore} : {this.state.computerScore} </div>
           <div className="label">Computer</div>
         </div>
         <div className="match-message">{this.state.message}</div>
-        <div className="choices">
+        <div className="choices clickable">
           <img onClick={() => this.match(0)} src="/rock.png" alt="rock" className="choice" />
           <img onClick={() => this.match(1)} src="/paper.png" alt="paper" className="choice" />
           <img onClick={() => this.match(2)} src="/scissors.png" alt="scissors" className="choice" />
+        </div>
+        <div className="container">
+          <button className="btn new-game-btn" onClick={() => this.newGame()}>New game</button>
         </div>
       </div>
     );

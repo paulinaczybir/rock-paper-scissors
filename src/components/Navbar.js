@@ -7,10 +7,10 @@ class Navbar extends Component {
       <nav className="nav-bar">
         <ul>
           <li>
-            <NavLink to="/computer">Computer vs Computer</NavLink>
+            <NavLink to="/computer" activeClassName="active">Computer vs Computer</NavLink>
           </li>
           <li>
-          <NavLink exact to="/">Player vs Computer</NavLink>
+            <NavLink exact to="/" activeClassName="active">Player vs Computer</NavLink>
           </li>
         </ul>
       </nav>
