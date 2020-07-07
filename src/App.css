@@ -39,14 +39,27 @@ header {
   color: #3E3E3E;
 }
 
+.match-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
 .score {
   border: 1px solid #3E3E3E;
   border-radius: 2px;
-  margin: 4rem auto;
-  width: 7rem;
+  margin: 4rem 2rem;
   padding: 4rem;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  color: #3E3E3E;
+}
+
+.label {
+  margin: 6.5rem 0 12rem 0;
+  padding: 0.5rem;
+  border: 1px solid #F1BD57;
+  background-color: rgb(240, 216, 168);
   color: #3E3E3E;
 }
 
