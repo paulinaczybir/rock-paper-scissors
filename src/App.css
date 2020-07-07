@@ -12,13 +12,17 @@ header {
 
 .choices {
   text-align: center;
-  margin-top: 4rem;
 }
 
 .choice {
+  padding: 3rem;
   display: inline-block;
   width: 10rem;
-  margin-left: 3rem;
+}
+
+.choice:active {
+  box-shadow: inset 0px 0px 50px 30px rgb(223, 245, 245);
+  border-radius: 15px;
 }
 
 .nav-bar:after {
@@ -57,13 +61,16 @@ header {
 
 .label {
   margin: 6.5rem 0 12rem 0;
-  padding: 0.5rem;
+  padding: 0.8rem;
   border: 1px solid #F1BD57;
+  border-radius: 1px;
   background-color: rgb(240, 216, 168);
   color: #3E3E3E;
+  font-size: 1rem;
 }
 
 .match-message {
   text-align: center;
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
