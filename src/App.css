@@ -42,6 +42,10 @@ header {
   width: 10rem;
 }
 
+.choices.clickable .choice {
+  cursor: pointer;
+}
+
 .choices.clickable .choice:active {
   box-shadow: inset 0px 0px 50px 30px rgb(223, 245, 245);
   border-radius: 15px;
@@ -93,6 +97,7 @@ header {
   color: white;
   margin: 3rem 1rem 0 1rem;
   display: block;
+  cursor: pointer;
 }
 
 .btn.new-game-btn {
