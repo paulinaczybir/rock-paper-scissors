@@ -11,3 +11,7 @@ In order to run this game locally you need to do the following:
 3. Install dependencies: `npm install`
 4. Start the server: `npm start`
 5. It should open automatically. If not, open [http://localhost:3000](http://localhost:3000) to view the game in the browser
+
+## Available online
+
+The game is deployed on Heroku, you can play on https://rock-paper-scissors-pcz.herokuapp.com/
